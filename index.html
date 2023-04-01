@@ -1,0 +1,75 @@
+<!-- Hold shift+option and drag to change several elements at once-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Chocolate cake</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="recipe.css">
+        <!-- Use #id to apply to all elements with that ID (id=); use element#ID to apply to a specific element/ID pair-->
+        <!-- You can also use element.class along with class= in an element definition-->
+        <!-- You can apply the same style to multiple element/class by listing them separated by comma-->
+        <!-- Use "#" for ID and "." for class-->
+    </head>
+
+    <body>
+        <!-- You can use several classes in one element by separating with a space,
+        thus matching several styles to one element based on class-->
+        
+        <!-- Use divides with unique classes to apply custom formatting to sub-sections-->
+        <div class="content">
+
+            <div class="category">
+                <p class="category">Recipe</p>
+            </div>
+
+            <h1 align="left"><b>Chocolate cake</b></h1>
+            
+            <div align="center" class="line"> </div>
+            
+            <div class="description">
+                <p class="description">Here is a fast and easy chocolate cake recipe! Enjoy!</p>
+            </div>
+
+            <div class="info">
+                <img class="center info" 
+                src="https://food-images.files.bbci.co.uk/food/recipes/easy_chocolate_cake_31070_16x9.jpg">
+
+                <table class="info">
+                    <tr>
+                        <th>Difficulty</th> <th>Preparation</th> <th>Cooking</th> <th>Total time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Easy</td> <td>10 min</td> <td>25 min</td> <td>35 min</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rest">
+                <div class="col1 col">
+                    <h2><b>Ingredients</b></h2>
+                    <div class="ingredients"> 
+                        <p>Dark chocolate: 200g</p>
+                        <p>Sugar: 150g</p>
+                        <p>Butter: 200g</p>
+                        <p>Eggs: 4</p>
+                        <p>Flour: 80g</p>
+                    </div>
+                </div>
+                <div class="col2 col">
+                    <h2><b>Instructions</b></h2>
+                    <table class="instructions"> 
+                        <tr><td><p class="number">1</p></td>
+                            <td class = "instruction_step">Melt chocolate and butter together.</td></tr>
+                        <tr><td><p class="number">2</p></td>
+                            <td class = "instruction_step">Mix the sugar, eggs, and flour.</td></tr>
+                        <tr><td><p class="number">3</p></td>
+                            <td class = "instruction_step">Mix everything to get a smooth dough.</td></tr>
+                        <tr><td><p class="number">4</p></td>
+                            <td class = "instruction_step">Bake in the oven.</td></tr>
+                    </table>
+                </div>
+        </div>
+        </div>
+    </body>
+</html>
