@@ -1,0 +1,116 @@
+/* An asterisk selects all elements - put generic styles first, as they apply in order */
+
+body {
+    background-color: #8BA1BB;
+    font-family: "Century gothic";
+}
+
+/* Margins go Top Right Bottom Left*/
+div.content {background-color: white; 
+    margin:  60px 10% 80px 10%; 
+    padding: 0px 30px 30px 30px;
+    min-width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px 8px;
+    overflow: visible;
+}
+ 
+div.rest {overflow: auto;}
+
+.center {text-align: center;
+        width: 100%}
+
+div.category {text-align: center; 
+    margin-bottom: 0px;}
+
+div.line {width: 100px;
+    height: 1px;     
+    background-color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;}
+       
+p.category {background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    padding: 8px 20px;
+    font-size: 16px;
+}    
+h1 {text-align: center;
+margin-top: 5px;
+margin-bottom: 12px;}
+/* display */
+
+div.description {text-align: center;}
+p.description {text-align: center; 
+    max-width: 400px; display: 
+    inline-block;
+    font-size: 17px;
+}
+table.info {
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    background-color: #6c829dc0;
+    height: 80px;
+    width: 100%;
+}
+/* Apply styles at the td & th levels of class "info" tables */
+table.info td {
+    text-align: center;
+    vertical-align: top;
+    font-size: 14px;
+}
+table.info th {
+    vertical-align: bottom;
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+div.info {position: relative;
+}
+
+/* object-fit: cover will automatically crop the picture to maintain aspect ratio as the browser window size changes*/
+/* Add min height to prevent bad table format if loading image slowly + background color */
+img.info {display: block;
+max-height: 400px;
+min-height: 200px;
+background-color: lightgray;
+object-fit: cover;}
+
+div.col1, div.col2 {
+    width: 45%;
+    margin-top: 10px;
+} 
+
+div.col h2 {
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #6c829dc0;
+    padding-bottom: 5px;
+}
+
+div.col1 {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+div.col2 {float: right;
+}
+
+div.ingredients p {text-align: center; border: solid 1px lightgray;
+    font-size: 14px; padding: 2% 0;
+    margin: 4px 0 0 0;}
+
+table.instructions p.number {background-color: #6c829dc0;
+                            font-size: 14px; color: white; font-weight: bold;
+                            width: 25px; text-align: center; height: 25px;
+                            padding-top: 4px; box-sizing: border-box;
+                            border-radius: 50%; margin: 0;}
+
+table.instructions td.instruction_step {font-size: 14px; padding-left: 10px; padding-bottom: 10px;}
+
+table.instructions td {vertical-align: top;}
+table.instructions tr {height: 40px;}
